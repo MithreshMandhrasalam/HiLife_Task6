@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Stopwatch</title>
+    <!-- Clean, formal font for numbers -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stopwatch-container">
+        <!-- Timer Display -->
+        <div id="display">00:00:00</div>
+        
+        <!-- Action Buttons -->
+        <div class="controls">
+            <button id="startStopBtn" class="btn start">Start</button>
+            <button id="lapBtn" class="btn">Lap</button>
+            <button id="resetBtn" class="btn">Reset</button>
+        </div>
+
+        <!-- Recorded Laps -->
+        <div class="laps-container">
+            <ul id="lapsList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

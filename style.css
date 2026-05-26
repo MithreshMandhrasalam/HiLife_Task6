@@ -1,0 +1,115 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Layout - Black Background */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center Container */
+.stopwatch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+/* Large White Timer Numbers */
+#display {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    user-select: none;
+}
+
+/* Buttons Controls Layout */
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button Base Styles */
+.btn {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    min-width: 100px;
+    transition: background-color 0.2s, transform 0.1s;
+    outline: none;
+}
+
+/* Active click shrink animation */
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* Attractive Button Color States */
+.btn.start {
+    background-color: #28a745; /* Clean Green */
+}
+
+.btn.start:hover {
+    background-color: #218838;
+}
+
+.btn.stop {
+    background-color: #dc3545; /* Clean Red */
+}
+
+.btn.stop:hover {
+    background-color: #c82333;
+}
+
+#lapBtn, #resetBtn {
+    background-color: #343a40; /* Clean Dark Gray */
+}
+
+#lapBtn:hover, #resetBtn:hover {
+    background-color: #23272b;
+}
+
+/* Simple Scrollable Laps Container */
+.laps-container {
+    width: 280px;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#lapsList {
+    list-style: none;
+    padding: 0;
+}
+
+#lapsList li {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.05rem;
+    padding: 8px 12px;
+    border-bottom: 1px solid #1a1a1a;
+    color: #888888;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Highlight the latest lap */
+#lapsList li:first-child {
+    color: #ffffff;
+}
