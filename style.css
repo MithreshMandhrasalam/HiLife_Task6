@@ -27,11 +27,13 @@ body {
 
 /* Large White Timer Numbers */
 #display {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 5rem;
-    font-weight: 300;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 5.5rem;
+    font-weight: 200;
     color: #ffffff;
-    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    letter-spacing: 0.02em;
     user-select: none;
 }
 
@@ -100,7 +102,9 @@ body {
 }
 
 #lapsList li {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
     font-size: 1.05rem;
     padding: 8px 12px;
     border-bottom: 1px solid #1a1a1a;
