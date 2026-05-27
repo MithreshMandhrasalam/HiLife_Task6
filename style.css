@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Page Layout - Black Background */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -16,7 +15,6 @@ body {
     align-items: center;
 }
 
-/* Center Container */
 .stopwatch-container {
     display: flex;
     flex-direction: column;
@@ -25,7 +23,6 @@ body {
     text-align: center;
 }
 
-/* Large White Timer Numbers */
 #display {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 5.5rem;
@@ -37,13 +34,11 @@ body {
     user-select: none;
 }
 
-/* Buttons Controls Layout */
 .controls {
     display: flex;
     gap: 20px;
 }
 
-/* Button Base Styles */
 .btn {
     font-family: Arial, sans-serif;
     font-size: 1rem;
@@ -58,14 +53,13 @@ body {
     outline: none;
 }
 
-/* Active click shrink animation */
 .btn:active {
     transform: scale(0.96);
 }
 
-/* Attractive Button Color States */
+
 .btn.start {
-    background-color: #28a745; /* Clean Green */
+    background-color: #28a745;
 }
 
 .btn.start:hover {
@@ -73,7 +67,7 @@ body {
 }
 
 .btn.stop {
-    background-color: #dc3545; /* Clean Red */
+    background-color: #dc3545;
 }
 
 .btn.stop:hover {
@@ -81,14 +75,13 @@ body {
 }
 
 #lapBtn, #resetBtn {
-    background-color: #343a40; /* Clean Dark Gray */
+    background-color: #343a40;
 }
 
 #lapBtn:hover, #resetBtn:hover {
     background-color: #23272b;
 }
 
-/* Simple Scrollable Laps Container */
 .laps-container {
     width: 280px;
     max-height: 180px;
@@ -113,7 +106,6 @@ body {
     justify-content: space-between;
 }
 
-/* Highlight the latest lap */
 #lapsList li:first-child {
     color: #ffffff;
 }
